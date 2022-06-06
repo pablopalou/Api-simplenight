@@ -5,8 +5,7 @@ import { ChevronDownIcon, FilterIcon, MinusSmIcon, PlusSmIcon, ViewGridIcon } fr
 import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
-
-// falta start date, end date
+import ProductCard from './ProductCard';
 
 const filtersSelect = [
     {
@@ -357,6 +356,15 @@ export default function Example() {
                             {/* Product grid */}
                             <div className="lg:col-span-3">
                                 {/* @TODO: meter aca las products cart para cada uno de los  hoteles */}
+                                {/* Recorrer mapa del estado hoteles, para hallar este enviar consulta a la api 
+                                con los datos de los filtros
+                                 */}
+                                {hotels.map(
+                                    (hotel) => (
+                                        // FALTA PASARLE LOS DATOS DEL HOTEL
+                                        <ProductCard/>
+                                ))}
+                                
                                 {/* Replace with your content */}
                                 <div className="border-4 border-dashed border-gray-200 rounded-lg h-96 lg:h-full" />
                                 {/* /End replace */}
