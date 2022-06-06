@@ -5,7 +5,7 @@ import { ChevronDownIcon, FilterIcon, MinusSmIcon, PlusSmIcon, ViewGridIcon } fr
 import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
-import ProductCard from './ProductCard';
+import ProductCard from './HotelCard';
 
 const filtersSelect = [
     {
