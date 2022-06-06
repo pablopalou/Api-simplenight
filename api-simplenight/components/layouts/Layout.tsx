@@ -7,7 +7,7 @@ interface Props {
 
 export const Layout:FC<Props> = ({ children }) => {
     return (
-        <>
+        <div className="bg-blue-200">
             <Head>
                 <title> Search hotel </title>
                 <meta name="author" content="Pablo Palou"/>
@@ -18,6 +18,6 @@ export const Layout:FC<Props> = ({ children }) => {
             <main>
                 { children }
             </main>
-        </>
+        </div>
     )
 }
